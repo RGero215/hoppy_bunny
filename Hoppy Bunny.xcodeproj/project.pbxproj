@@ -17,6 +17,7 @@
 		D8133F7D2038A3270031BE09 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = D8133F7B2038A3270031BE09 /* LaunchScreen.storyboard */; };
 		D8133F882038A3270031BE09 /* Hoppy_BunnyTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = D8133F872038A3270031BE09 /* Hoppy_BunnyTests.swift */; };
 		D8133F932038A3270031BE09 /* Hoppy_BunnyUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = D8133F922038A3270031BE09 /* Hoppy_BunnyUITests.swift */; };
+		D821A9C52038F8D800CFFEB7 /* CGFloat+Extensions.swift in Sources */ = {isa = PBXBuildFile; fileRef = D821A9C42038F8D800CFFEB7 /* CGFloat+Extensions.swift */; };
 		D8661D632038BF9E00B3016B /* Hero.sks in Resources */ = {isa = PBXBuildFile; fileRef = D8661D622038BF9E00B3016B /* Hero.sks */; };
 /* End PBXBuildFile section */
 
@@ -54,6 +55,7 @@
 		D8133F8E2038A3270031BE09 /* Hoppy BunnyUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = "Hoppy BunnyUITests.xctest"; sourceTree = BUILT_PRODUCTS_DIR; };
 		D8133F922038A3270031BE09 /* Hoppy_BunnyUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Hoppy_BunnyUITests.swift; sourceTree = "<group>"; };
 		D8133F942038A3270031BE09 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		D821A9C42038F8D800CFFEB7 /* CGFloat+Extensions.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = "CGFloat+Extensions.swift"; sourceTree = "<group>"; };
 		D8661D622038BF9E00B3016B /* Hero.sks */ = {isa = PBXFileReference; lastKnownFileType = file.sks; path = Hero.sks; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
@@ -89,6 +91,7 @@
 				D8133F862038A3270031BE09 /* Hoppy BunnyTests */,
 				D8133F912038A3270031BE09 /* Hoppy BunnyUITests */,
 				D8133F6A2038A3270031BE09 /* Products */,
+				D821A9C42038F8D800CFFEB7 /* CGFloat+Extensions.swift */,
 			);
 			sourceTree = "<group>";
 		};
@@ -276,6 +279,7 @@
 			files = (
 				D8133F732038A3270031BE09 /* GameScene.swift in Sources */,
 				D8133F752038A3270031BE09 /* GameViewController.swift in Sources */,
+				D821A9C52038F8D800CFFEB7 /* CGFloat+Extensions.swift in Sources */,
 				D8133F6D2038A3270031BE09 /* AppDelegate.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
