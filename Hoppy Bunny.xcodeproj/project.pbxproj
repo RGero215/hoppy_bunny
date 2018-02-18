@@ -7,6 +7,7 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		D8077B68203A058300C75227 /* Obstacle.sks in Resources */ = {isa = PBXBuildFile; fileRef = D8077B67203A058300C75227 /* Obstacle.sks */; };
 		D8133F6D2038A3270031BE09 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = D8133F6C2038A3270031BE09 /* AppDelegate.swift */; };
 		D8133F6F2038A3270031BE09 /* GameScene.sks in Resources */ = {isa = PBXBuildFile; fileRef = D8133F6E2038A3270031BE09 /* GameScene.sks */; };
 		D8133F712038A3270031BE09 /* Actions.sks in Resources */ = {isa = PBXBuildFile; fileRef = D8133F702038A3270031BE09 /* Actions.sks */; };
@@ -39,6 +40,7 @@
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
+		D8077B67203A058300C75227 /* Obstacle.sks */ = {isa = PBXFileReference; lastKnownFileType = file.sks; path = Obstacle.sks; sourceTree = "<group>"; };
 		D8133F692038A3270031BE09 /* Hoppy Bunny.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "Hoppy Bunny.app"; sourceTree = BUILT_PRODUCTS_DIR; };
 		D8133F6C2038A3270031BE09 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		D8133F6E2038A3270031BE09 /* GameScene.sks */ = {isa = PBXFileReference; lastKnownFileType = file.sks; path = GameScene.sks; sourceTree = "<group>"; };
@@ -110,6 +112,7 @@
 			children = (
 				D8133F6C2038A3270031BE09 /* AppDelegate.swift */,
 				D8133F6E2038A3270031BE09 /* GameScene.sks */,
+				D8077B67203A058300C75227 /* Obstacle.sks */,
 				D8661D622038BF9E00B3016B /* Hero.sks */,
 				D8133F702038A3270031BE09 /* Actions.sks */,
 				D8133F722038A3270031BE09 /* GameScene.swift */,
@@ -253,6 +256,7 @@
 				D8661D632038BF9E00B3016B /* Hero.sks in Resources */,
 				D8133F7D2038A3270031BE09 /* LaunchScreen.storyboard in Resources */,
 				D8133F712038A3270031BE09 /* Actions.sks in Resources */,
+				D8077B68203A058300C75227 /* Obstacle.sks in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};

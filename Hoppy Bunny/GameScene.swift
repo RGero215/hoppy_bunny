@@ -16,6 +16,9 @@ class GameScene: SKScene {
     let fixedDelta: CFTimeInterval = 1.0 / 60.0 /* 60 FPS */
     let scrollSpeed: CGFloat = 100
     var scrollLayer: SKNode!
+    var obstacleSource: SKNode!
+    var obstacleLayer: SKNode!
+    var spawnTimer: CFTimeInterval = 0
     
     override func didMove(to view: SKView) {
         /* Setup your scene here */
@@ -24,6 +27,10 @@ class GameScene: SKScene {
         hero = self.childNode(withName: "//hero") as! SKSpriteNode
         /* Set reference to scroll layer node */
         scrollLayer = self.childNode(withName: "scrollLayer")
+        /* Set reference to obstacle Source node */
+        obstacleSource = self.childNode(withName: "obstacle")
+        /* Set reference to obstacle layer node */
+        obstacleLayer = self.childNode(withName: "obstacleLayer")
     }
     
     override func touchesBegan(_ touches: Set<UITouch>, with event: UIEvent?) {
@@ -63,6 +70,9 @@ class GameScene: SKScene {
         
         /* Process world scrolling */
         scrollWorld()
+        /* Process obstacles */
+        updateObstacles()
+        spawnTimer+=fixedDelta
     }
     
     func scrollWorld() {
@@ -84,5 +94,45 @@ class GameScene: SKScene {
                 ground.position = self.convert(newPosition, to: scrollLayer)
             }
         }
+    }
+    
+    func updateObstacles() {
+        /* Update Obstacles */
+        
+        obstacleLayer.position.x -= scrollSpeed * CGFloat(fixedDelta)
+        
+        /* Loop through obstacle layer nodes */
+        for obstacle in obstacleLayer.children as! [SKReferenceNode] {
+            
+            /* Get obstacle node position, convert node position to scene space */
+            let obstaclePosition = obstacleLayer.convert(obstacle.position, to: self)
+            
+            /* Check if obstacle has left the scene */
+            if obstaclePosition.x <= -26 {
+                // 26 is one half the width of an obstacle
+                
+                /* Remove obstacle node from obstacle layer */
+                obstacle.removeFromParent()
+            }
+            
+        }
+        
+        /* Time to add a new obstacle? */
+        if spawnTimer >= 1.5 {
+            
+            /* Create a new obstacle by copying the source obstacle */
+            let newObstacle = obstacleSource.copy() as! SKNode
+            obstacleLayer.addChild(newObstacle)
+            
+            /* Generate new obstacle position, start just outside screen and with a random y value */
+            let randomPosition = CGPoint(x: 352, y: CGFloat.random(min: 234, max: 382))
+            
+            /* Convert new node position back to obstacle layer space */
+            newObstacle.position = self.convert(randomPosition, to: obstacleLayer)
+            
+            // Reset spawn timer
+            spawnTimer = 0
+        }
+        
     }
 }
