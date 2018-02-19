@@ -15,7 +15,6 @@
 		D85DE3EE203B340600FEE12E /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = D85DE3EC203B340600FEE12E /* Main.storyboard */; };
 		D85DE3F0203B340600FEE12E /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = D85DE3EF203B340600FEE12E /* Assets.xcassets */; };
 		D85DE3F3203B340600FEE12E /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = D85DE3F1203B340600FEE12E /* LaunchScreen.storyboard */; };
-		D865B335203B37B400728228 /* Hero.sks in Resources */ = {isa = PBXBuildFile; fileRef = D865B334203B37B400728228 /* Hero.sks */; };
 		D8819F8B203B689F00B0366A /* MSButtonNode.swift in Sources */ = {isa = PBXBuildFile; fileRef = D8819F8A203B689F00B0366A /* MSButtonNode.swift */; };
 		D8BD76BD203B4EC700C36A58 /* Images.atlas in Resources */ = {isa = PBXBuildFile; fileRef = D8BD76BC203B4EC700C36A58 /* Images.atlas */; };
 		D8BD76BF203B571500C36A58 /* CGFloat+Extensions.swift in Sources */ = {isa = PBXBuildFile; fileRef = D8BD76BE203B571500C36A58 /* CGFloat+Extensions.swift */; };
@@ -34,7 +33,6 @@
 		D85DE3EF203B340600FEE12E /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		D85DE3F2203B340600FEE12E /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		D85DE3F4203B340600FEE12E /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
-		D865B334203B37B400728228 /* Hero.sks */ = {isa = PBXFileReference; lastKnownFileType = file.sks; path = Hero.sks; sourceTree = "<group>"; };
 		D8819F8A203B689F00B0366A /* MSButtonNode.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = MSButtonNode.swift; sourceTree = "<group>"; };
 		D8BD76BC203B4EC700C36A58 /* Images.atlas */ = {isa = PBXFileReference; lastKnownFileType = folder.skatlas; path = Images.atlas; sourceTree = "<group>"; };
 		D8BD76BE203B571500C36A58 /* CGFloat+Extensions.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = "CGFloat+Extensions.swift"; sourceTree = "<group>"; };
@@ -75,7 +73,6 @@
 				D8BD76BC203B4EC700C36A58 /* Images.atlas */,
 				D85DE3E2203B340600FEE12E /* AppDelegate.swift */,
 				D85DE3E4203B340600FEE12E /* GameScene.sks */,
-				D865B334203B37B400728228 /* Hero.sks */,
 				D85DE3E6203B340600FEE12E /* Actions.sks */,
 				D8819F8A203B689F00B0366A /* MSButtonNode.swift */,
 				D85DE3E8203B340600FEE12E /* GameScene.swift */,
@@ -155,7 +152,6 @@
 				D8BD76BD203B4EC700C36A58 /* Images.atlas in Resources */,
 				D85DE3E5203B340600FEE12E /* GameScene.sks in Resources */,
 				D85DE3F0203B340600FEE12E /* Assets.xcassets in Resources */,
-				D865B335203B37B400728228 /* Hero.sks in Resources */,
 				D8F2BA17203B6C0200D00B32 /* GameEffects.sks in Resources */,
 				D85DE3F3203B340600FEE12E /* LaunchScreen.storyboard in Resources */,
 				D85DE3E7203B340600FEE12E /* Actions.sks in Resources */,
